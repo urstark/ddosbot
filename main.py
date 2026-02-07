@@ -5,9 +5,9 @@ import os
 
 from keep_alive import keep_alive
 keep_alive()
-bot = telebot.TeleBot('7259034553:AAHYWdbEpMxeJAkv_HH1QYOChdMLMvot13E')
+bot = telebot.TeleBot('8458220884:AAFszh4YQVP4sqXOhBPADkqKMxn5eb8x4m0')
 
-admin_id = ["5588464519"]
+admin_id = ["8280163652"]
 
 USER_FILE = "users.txt"
 
@@ -424,4 +424,5 @@ while True:
         bot.polling(none_stop=True)
     except Exception as e:
         print(e)
+
 
