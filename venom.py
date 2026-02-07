@@ -7,14 +7,14 @@ import asyncio
 API_TOKEN = 'TOKEN'
 ADMIN_ID = 'YOUR ID'
 MAX_RESTARTS = 5
-RESTART_PERIOD = 60  # Seconds
+RESTART_PERIOD = 60
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 bot = Bot(API_TOKEN)
 
 def start_bot():
     """Start the bot script as a subprocess."""
-    return subprocess.Popen(['python', 'm.py'])
+    return subprocess.Popen(['python', 'main.py'])
 
 async def notify_admin(message):
     """Send a notification message to the admin via Telegram."""
@@ -57,4 +57,4 @@ if __name__ == '__main__':
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
-        logging.info("Venom script terminated by user.")
+        logging.info(" script terminated by user.")
